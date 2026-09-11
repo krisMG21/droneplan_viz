@@ -1,0 +1,4 @@
+include README.md
+include LICENSE
+recursive-include droneplan_viz/render/assets *.png
+recursive-include droneplan_viz_app/assets *.ttf *.txt

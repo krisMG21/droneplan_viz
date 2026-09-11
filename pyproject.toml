@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "droneplan_viz"
+version = "1.0.0"
+description = "Biblioteca de visualización y validación lógica de planes PDDL en dominios de drones"
+readme = "README.md"
+requires-python = ">=3.12"
+license = { file = "LICENSE" }
+dependencies = [
+    # pygame-ce (Community Edition) es un reemplazo directo de pygame y la
+    # dependencia que ya arrastra pygame_gui. Declararlo aquí evita instalar
+    # dos versiones del mismo módulo. La API usada (Surface, draw, font) es
+    # totalmente compatible.
+    "pygame-ce>=2.5",
+    "numpy>=1.26",
+]
+
+[project.optional-dependencies]
+# Aplicación interactiva (paquete droneplan_viz_app). Quien solo use la
+# biblioteca para validar o visualizar planes por código no necesita
+# pygame_gui.
+app = [
+    "pygame_gui>=0.6",
+]
+dev = [
+    "pytest>=8.0",
+]
+
+[project.scripts]
+# Tras `pip install -e ".[app]"`, el comando `droneplan-viz` lanza la
+# aplicación interactiva desde cualquier terminal.
+droneplan-viz = "droneplan_viz_app.main:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["droneplan_viz*", "droneplan_viz_app*"]
+
+[tool.setuptools.package-data]
+"droneplan_viz.render" = ["assets/*.png"]
+"droneplan_viz_app" = [
+    "assets/fonts/*.ttf", 
+    "assets/fonts/*.txt", 
+    "assets/*.json", 
+    "assets/branding/*", 
+    "assets/hud_icons/*"
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

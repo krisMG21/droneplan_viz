@@ -1,0 +1,176 @@
+{
+    "defaults": {
+        "colours": {
+            "normal_bg": "#1E2832",
+            "hovered_bg": "#2A3540",
+            "disabled_bg": "#1A2128",
+            "selected_bg": "#3A5C7E",
+            "active_bg": "#2A4360",
+            "dark_bg": "#141A22",
+            "normal_text": "#E6EBF0",
+            "hovered_text": "#FFFFFF",
+            "disabled_text": "#6E7682",
+            "selected_text": "#FFFFFF",
+            "active_text": "#FFFFFF",
+            "normal_border": "#3C4754",
+            "hovered_border": "#5A6878",
+            "disabled_border": "#2A3540",
+            "selected_border": "#7AA0C8",
+            "active_border": "#6A92BD",
+            "link_text": "#7AB8FF",
+            "link_hover": "#A8D0FF",
+            "link_selected": "#7AB8FF",
+            "text_shadow": "#10141A",
+            "filled_bar": "#3C7E5A",
+            "unfilled_bar": "#2A2F36"
+        }
+    },
+    "button": {
+        "font": {
+            "name": "monogram",
+            "size": "24",
+            "style": "regular",
+            "regular_path": "FONT_PATH_PLACEHOLDER"
+        },
+        "misc": {
+            "border_width": "1",
+            "shadow_width": "1",
+            "text_shadow": "0"
+        }
+    },
+    "label": {
+        "font": {
+            "name": "monogram",
+            "size": "24",
+            "style": "regular",
+            "regular_path": "FONT_PATH_PLACEHOLDER"
+        }
+    },
+    "text_box": {
+        "font": {
+            "name": "monogram",
+            "size": "18",
+            "style": "regular",
+            "regular_path": "FONT_PATH_PLACEHOLDER"
+        }
+    },
+    "selection_list": {
+        "font": {
+            "name": "monogram",
+            "size": "14",
+            "style": "regular",
+            "regular_path": "FONT_PATH_PLACEHOLDER"
+        }
+    },
+    "selection_list.button": {
+        "misc": {
+            "text_horiz_alignment": "left",
+            "text_horiz_alignment_padding": "8"
+        }
+    },
+    "panel": {
+        "colours": {
+            "normal_bg": "#1A2128",
+            "normal_border": "#3C4754"
+        }
+    },
+    "progress_bar": {
+        "colours": {
+            "normal_bg": "#2A2F36",
+            "filled_bar": "#3C7E5A",
+            "normal_border": "#3C4754"
+        }
+    },
+    "@speed_button": {
+        "prototype": "button",
+        "font": {
+            "name": "monogram",
+            "size": "22",
+            "style": "regular",
+            "regular_path": "FONT_PATH_PLACEHOLDER"
+        }
+    },
+    "@transport_home": {
+        "prototype": "button",
+        "misc": {"border_width": "0", "shadow_width": "0"}
+    },
+    "@transport_step_back": {
+        "prototype": "button",
+        "misc": {"border_width": "0", "shadow_width": "0"}
+    },
+    "@transport_play": {
+        "prototype": "button",
+        "misc": {"border_width": "0", "shadow_width": "0"}
+    },
+    "@transport_pause": {
+        "prototype": "button",
+        "misc": {"border_width": "0", "shadow_width": "0"}
+    },
+    "@transport_step_forward": {
+        "prototype": "button",
+        "misc": {"border_width": "0", "shadow_width": "0"}
+    },
+    "@transport_end": {
+        "prototype": "button",
+        "misc": {"border_width": "0", "shadow_width": "0"}
+    },
+    "@inventory_header": {
+        "font": {
+            "name": "monogram",
+            "size": "20",
+            "style": "regular",
+            "regular_path": "FONT_PATH_PLACEHOLDER"
+        },
+        "colours": {
+            "normal_bg":     "#1A2128",
+            "hovered_bg":    "#252D38",
+            "active_bg":     "#252D38",
+            "normal_border": "#1A2128",
+            "hovered_border": "#1A2128",
+            "active_border":  "#1A2128",
+            "normal_text":   "#E6EBF0",
+            "hovered_text":  "#FFFFFF",
+            "active_text":   "#FFFFFF"
+        },
+        "misc": {
+            "border_width": "0",
+            "shadow_width": "0",
+            "text_horiz_alignment": "left",
+            "text_horiz_alignment_padding": "4"
+        }
+    },
+    "@inventory_box": {
+        "colours": {
+            "normal_bg": "#252D38",
+            "normal_border": "#3C4754"
+        },
+        "misc": {
+            "border_width": "1",
+            "shadow_width": "0"
+        }
+    },
+    "@inventory_name": {
+        "font": {
+            "name": "monogram",
+            "size": "16",
+            "style": "regular",
+            "regular_path": "FONT_PATH_PLACEHOLDER"
+        },
+        "misc": {
+            "text_horiz_alignment": "left",
+            "text_horiz_alignment_padding": "2"
+        }
+    },
+    "@inventory_stat": {
+        "font": {
+            "name": "monogram",
+            "size": "14",
+            "style": "regular",
+            "regular_path": "FONT_PATH_PLACEHOLDER"
+        },
+        "misc": {
+            "text_horiz_alignment": "left",
+            "text_horiz_alignment_padding": "2"
+        }
+    }
+}
